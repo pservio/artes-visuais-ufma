@@ -8,6 +8,12 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1" />
     <meta name="description" content="Bacharelado em Artes Visuais da Universidade Federal do Maranhão - UFMA. Conheça nosso curso, corpo docente, grupos de pesquisa e galeria de trabalhos." />
     <meta name="keywords" content="artes visuais, UFMA, bacharelado, arte, pintura, escultura, gravura, fotografia, São Luís, Maranhão" />
+    <script>
+      // Redireciona para hash routing se necessário
+      if (!window.location.hash) {
+        window.location.replace(window.location.pathname + '#/');
+      }
+    </script>
     <link rel="icon" type="image/png" href="https://files.manuscdn.com/user_upload_by_module/web_dev_logo/310519663220835213/fcAaZIMNhTSMoTtH.png" />
     <link rel="apple-touch-icon" href="https://files.manuscdn.com/user_upload_by_module/web_dev_logo/310519663220835213/fcAaZIMNhTSMoTtH.png" />
     <title>Artes Visuais - UFMA</title>
@@ -82,16 +88,6 @@ Error generating stack: `+l.message+`
 </script>
 
     <div id="root"></div>
-    <script>
-      // Redireciona para hash routing se necessário
-      if (!window.location.hash && !window.location.pathname.includes('/#')) {
-        const basePath = '/artes-visuais-ufma/';
-        const currentPath = window.location.pathname;
-        if (currentPath === basePath || currentPath === basePath + 'index.html') {
-          window.location.hash = '#/';
-        }
-      }
-    </script>
     <script
       defer
       src="https://manus-analytics.com/umami"
