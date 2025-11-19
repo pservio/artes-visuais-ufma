@@ -82,6 +82,16 @@ Error generating stack: `+l.message+`
 </script>
 
     <div id="root"></div>
+    <script>
+      // Redireciona para hash routing se necessário
+      if (!window.location.hash && !window.location.pathname.includes('/#')) {
+        const basePath = '/artes-visuais-ufma/';
+        const currentPath = window.location.pathname;
+        if (currentPath === basePath || currentPath === basePath + 'index.html') {
+          window.location.hash = '#/';
+        }
+      }
+    </script>
     <script
       defer
       src="https://manus-analytics.com/umami"
