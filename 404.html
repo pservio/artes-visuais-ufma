@@ -5,9 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Redirecionando...</title>
     <script>
-        // Redireciona para a página inicial com a rota solicitada
-        const path = window.location.pathname.replace('/artes-visuais-ufma/', '');
-        window.location.replace('/artes-visuais-ufma/#' + path);
+        // Obtém o caminho solicitado
+        const pathname = window.location.pathname;
+        const basePath = '/artes-visuais-ufma/';
+        
+        // Se for a raiz, redireciona para #/
+        if (pathname === basePath || pathname === basePath + 'index.html') {
+            window.location.replace(basePath + '#/');
+        } else {
+            // Para outras rotas, extrai o caminho e redireciona com #
+            const path = pathname.replace(basePath, '');
+            window.location.replace(basePath + '#/' + path);
+        }
     </script>
 </head>
 <body>
