@@ -2,6 +2,7 @@ import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
+import { useHashLocation } from "wouter/use-hash-location";
 import ErrorBoundary from "./components/ErrorBoundary";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -13,7 +14,8 @@ import CorpoDocente from "./pages/CorpoDocente";
 import CAD from "./pages/CAD";
 import Contato from "./pages/Contato";
 
-function Router() {
+function AppRouter() {
+  useHashLocation();
   return (
     <>
       <Header />
@@ -47,7 +49,7 @@ function App() {
       >
         <TooltipProvider>
           <Toaster />
-          <Router />
+          <AppRouter />
         </TooltipProvider>
       </ThemeProvider>
     </ErrorBoundary>
