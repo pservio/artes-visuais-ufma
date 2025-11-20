@@ -15,7 +15,6 @@ import CAD from "./pages/CAD";
 import Contato from "./pages/Contato";
 
 function AppRouter() {
-  useHashLocation();
   return (
     <>
       <Header />
@@ -41,6 +40,7 @@ function AppRouter() {
 // - If you want to make theme switchable, pass `switchable` ThemeProvider and use `useTheme` hook
 
 function App() {
+  useHashLocation();
   return (
     <ErrorBoundary>
       <ThemeProvider
