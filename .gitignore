@@ -1,0 +1,25 @@
+# Sistema operacional
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# Editores / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs e temporários
+*.log
+*.tmp
+*.bak
+
+# Variáveis de ambiente (se algum dia forem adicionadas)
+.env
+.env.local
+.env.*.local
+
+# Dependências (caso o projeto evolua para usar Node)
+node_modules/

@@ -1,0 +1,542 @@
+================================================================================
+CONTEUDO DO SITE — LICENCIATURA EM ARTES VISUAIS UFMA
+================================================================================
+Fonte: https://artesvisuaisufma.framer.website/ (mirror local)
+Extraido em: 2026
+Este arquivo contem TODO o texto visivel do site original, organizado por
+secao. Serve como referencia unica para revisao, traducao e reuso do
+conteudo no novo site em Astro.
+================================================================================
+
+
+================================================================================
+1. NAVEGACAO / MENU
+================================================================================
+
+Logotipo: ARTES VISUAIS | UFMA
+
+Itens do menu:
+- Perfil do Curso
+- Curriculo
+- Historia
+- Depoimentos
+- Docentes
+- Projetos
+- Area do Aluno
+
+
+================================================================================
+2. HERO (ABERTURA DA PAGINA)
+================================================================================
+
+Titulo: Licenciatura em Artes Visuais UFMA
+
+
+================================================================================
+3. PERFIL DO CURSO
+================================================================================
+
+Chapeu: Perfil do curso
+
+Titulo:
+Formacao estetica e pedagogica para transformar o olhar e a sociedade.
+
+Credito da obra de fundo:
+Obra: Ge Viana — Atualizacoes Traumaticas, colagem digital (2021).
+
+Metricas do curso
+-----------------
+Periodo:              Matutino
+Carga horaria total:  3.336 horas
+Duracao:              4 anos
+Vagas:                25 por semestre
+Ingresso:             ENEM / SISU
+Perfil do egresso:    Profissional habilitado para o ensino basico,
+                      producao artistica, pesquisa academica e gestao
+                      cultural.
+
+
+================================================================================
+4. MATRIZ CURRICULAR
+================================================================================
+
+Chapeu: Matriz curricular
+
+Titulo:
+O percurso onde a sensibilidade artistica ganha forma, tecnica e
+proposito educacional.
+
+Credito da foto:
+Foto: mural de Edi Bruzaca.
+
+Chamada:
+Conheca aqui nosso programa de disciplinas.
+
+<article class="card-periodo">
+<h3>1º Periodo</h3>
+<ul>
+<li>Ceramica</li>
+<li>Fotografia</li>
+<li>Metodologia do trabalho cientifico</li>
+<li>Fundamentos socio-antropologicos da arte</li>
+<li>Elementos da linguagem visual</li>
+</ul>
+</article>
+
+<article class="card-periodo">
+<h3>2º Periodo</h3>
+<ul>
+<li>Desenho I</li>
+<li>Politica e planejamento da educacao basica no Brasil</li>
+<li>Cinema e video</li>
+<li>Historia da arte I</li>
+<li>Gravura</li>
+<li>Psicologia da educacao</li>
+</ul>
+</article>
+
+<article class="card-periodo">
+<h3>3º Periodo</h3>
+<ul>
+<li>Historia da Arte II</li>
+<li>Desenho II</li>
+<li>Didatica</li>
+<li>Laboratorio da Cor</li>
+<li>Historia da arte-educacao no Brasil</li>
+</ul>
+</article>
+
+<article class="card-periodo">
+<h3>4º Periodo</h3>
+<ul>
+<li>Tecnologias da informacao e da comunicacao para o ensino das artes no Brasil</li>
+<li>Historia da Arte III</li>
+<li>Arte e novas tecnologias</li>
+<li>Programacao visual</li>
+<li>Pintura</li>
+</ul>
+</article>
+
+<article class="card-periodo">
+<h3>5º Periodo</h3>
+<ul>
+<li>Laboratorio de producao bidimensional</li>
+<li>Historia da Arte IV</li>
+<li>Teoria e critica da arte</li>
+<li>Processos criativos na educacao</li>
+<li>Metodologia do ensino das artes visuais</li>
+</ul>
+</article>
+
+<article class="card-periodo">
+<h3>6º Periodo</h3>
+<ul>
+<li>Laboratorio de producao tridimensional</li>
+<li>Estetica</li>
+<li>Cultura imaterial regional</li>
+<li>Estagio: ensino infantil</li>
+<li>Metodologia da pesquisa em artes visuais</li>
+</ul>
+</article>
+
+<article class="card-periodo">
+<h3>7º Periodo</h3>
+<ul>
+<li>Educacao especial</li>
+<li>Laboratorio artistico cultural</li>
+<li>Estagio: ensino fundamental</li>
+<li>Projeto de pesquisa em TCC</li>
+</ul>
+</article>
+
+<article class="card-periodo">
+<h3>8º Periodo</h3>
+<ul>
+<li>Libras</li>
+<li>Cultura material regional</li>
+<li>Laboratorio de producao em audiovisual</li>
+<li>Estagio: ensino medio</li>
+<li>rabalho de conclusao de curso</li>
+</ul>
+</article>
+================================================================================
+5. NOSSA HISTORIA
+================================================================================
+
+Chapeu: Nossa historia
+
+Titulo:
+Uma trajetoria de tradicao, resistencia e inovacao na educacao visual
+maranhense.
+
+Credito da obra de fundo:
+Obra: Silvana Mendes.
+
+Subtitulo:
+Tradicao e renovacao no ensino das artes visuais
+
+Paragrafo 1:
+A trajetoria do ensino de arte na Universidade Federal do Maranhao (UFMA)
+e marcada por um processo continuo de atualizacao e compromisso com a
+formacao docente. A historia do curso remonta a Licenciatura em Desenho
+e Plastica, reconhecida originalmente em 1977. Em 1981, essa graduacao
+foi transformada no curso de Licenciatura em Educacao Artistica, que
+por decadas formou os profissionais de arte do nosso estado.
+
+Paragrafo 2:
+Com o objetivo de atender as novas Diretrizes Curriculares Nacionais e
+elevar o padrao de qualidade academica, o curso passou por uma profunda
+reformulacao em 2010, assumindo a nomenclatura de Licenciatura em Artes
+Visuais. Esta mudanca nao foi apenas de nome, mas de identidade: o foco
+passou a ser a unidade entre a teoria estetica e a pratica de atelie,
+preparando o professor para os desafios da contemporaneidade.
+
+
+Marcos da Nossa Evolucao
+------------------------
+
+1977 — Reconhecimento da Licenciatura em Desenho e Plastica pelo
+Decreto no 79.126/77.
+
+1981 — Transicao para o curso de Licenciatura em Educacao Artistica
+(Resolucao no 24/84-CONSUN).
+
+2010 — Criacao oficial da Licenciatura em Artes Visuais
+(Resolucao CONSUN no 125/2010).
+
+2015-2018 — Implementacao do atual curriculo (AV2), que equilibra a
+formacao pedagogica com praticas de investigacao em atelies
+especializados de gravura, ceramica, fotografia e midias digitais.
+
+
+================================================================================
+6. DEPOIMENTOS DE EGRESSOS DO CURSO
+================================================================================
+
+
+Edi Bruzaca
+-----------
+"O curso de Artes Visuais me fez entender que minha arte vai muito
+alem: ela educa, dialoga, provoca e cria caminhos. Mostrou-me que cada
+intervencao e oficina carrega potencia, historia e responsabilidade.
+Hoje, sigo unindo pratica e consciencia, somando saberes tradicionais
+e academicos — da rua para a sala de aula, da sala de aula para a rua.
+Mais do que produzir imagens, construo conexoes, compartilho
+conhecimentos e transformo realidades por meio da arte."
+
+
+Valeria Eulina Pires Pereira
+-----------------------------
+"O curso de Artes Visuais teve um papel fundamental na minha formacao.
+Foi nesse espaco que comecei a desenvolver um olhar mais atento e
+sensivel sobre as imagens e seus contextos. Essa experiencia despertou
+meu interesse pela pesquisa e foi decisiva para que eu seguisse na
+pos-graduacao, aprofundando reflexoes sobre a historia, a memoria e
+os sentidos das imagens."
+
+
+Carlos Vinicius Moreira de Brito Santos
+----------------------------------------
+"O curso me despertou para a pesquisa academica, me auxiliou a
+encontrar um campo de estudo e me estimulou amadurecer a escrita."
+
+
+Tons de Maria Viana Cardoso
+----------------------------
+"Honrando, sem romantizar o caminho, reconheco a importancia da
+graduacao em Artes Visuais, na UFMA, para a minha formacao como
+arte/educadore. Acredito em uma arte/educacao emancipatoria, critica,
+possivel atraves de um devir sensivel, poetico, reflexivo. A graduacao
+me permitiu experienciar parte do campo academico artistico e suas
+contradicoes. Dessa forma, tive contato com divergencias de pensamento
+e posicionamento, travei embates, nutri parcerias, conheci artistas e
+professores incriveis, e fiz bons amigos."
+
+
+Wanessa Ellen Costa e Costa
+----------------------------
+"O curso de Artes Visuais foi fundamental para as transformacoes mais
+importantes da minha trajetoria. Foi nele que sensibilizei meu olhar e
+redefini meus caminhos pessoais e profissionais. Foi tambem nesse
+percurso que tive a oportunidade de me compreender como
+artista-educadora-pesquisadora, o que me conduziu a docencia e a minha
+trajetoria academica, onde sigo aprofundando meu compromisso com as
+Artes Visuais e compartilhando as experiencias, sensibilidades e
+possibilidades que a arte pode proporcionar para outras pessoas."
+
+
+Waldeir Brito
+-------------
+"O curso me ajudou a amadurecer a mente enquanto artista e pesquisador.
+Me ensinou metodos de pesquisa e principalmente a selecionar temas para
+meus trabalhos artisticos e principalmente como transforma-los em
+educacao. Eu nao me preocupava tanto com esse peso educativo, mas
+depois de conhecer a realidade do ensino de artes no Brasil e a
+importancia disso, meio que virou um objetivo desenvolver minha arte
+para fins educacionais tambem. Principalmente fazer com que o
+maranhense conheca um pouco das culturas que existem em seu territorio."
+
+
+================================================================================
+7. PROFESSORES E PROJETOS (HEADER)
+================================================================================
+
+Chapeu: Professores e projetos
+
+Titulo:
+Saberes plurais e praticas multiplas: conectando diferentes trajetorias
+academicas a projetos inovadores nas artes visuais.
+
+Credito da obra:
+Obra: Waldeir Brito.
+
+
+================================================================================
+8. EQUIPE DOCENTE
+================================================================================
+
+Subtitulo: Conheca os professores do curso.
+
+
+Alexandre de Albuquerque Mourao
+  Titulacao: Doutor em Psicologia do Desenvolvimento e Escolar
+  Link:      Curriculo Lattes
+
+Elisene Matos
+  Titulacao: Doutora em Ciencias Sociais
+  Link:      Curriculo Lattes
+
+Frederico Fernando Souza Silva
+  Titulacao: Doutor em Artes Visuais
+  Link:      Curriculo Lattes
+
+Isabel Mota Costa
+  Titulacao: Doutora em Educacao Artistica
+  Link:      Curriculo Lattes
+
+Jordana Falcao Tavares
+  Titulacao: Doutora em Arte e Cultura Visual
+  Link:      Curriculo Lattes
+
+Jose Marcelo do Espirito Santo
+  Titulacao: Mestre em Desenvolvimento Urbano
+  Link:      Curriculo Lattes
+
+Jose Murilo Moraes dos Santos
+  Titulacao: Doutor em Historia
+  Link:      Curriculo Lattes
+
+Larissa Lacerda Menendez
+  Titulacao: Doutora em Ciencias Sociais
+  Link:      Curriculo Lattes
+
+Maira Teresa Goncalves Rocha
+  Titulacao: Doutora em Informatica na Educacao
+  Link:      Curriculo Lattes
+
+Mariana Estellita Lins Silva
+  Titulacao: Doutora em Artes Visuais
+  Link:      Curriculo Lattes
+
+Mateus Alves Silva
+  Titulacao: Doutor em Historia
+  Link:      Curriculo Lattes
+
+Pablo Servio
+  Titulacao: Doutor em Arte e Cultura Visual (UFG)
+  Link:      Curriculo Lattes
+
+Paulo Cesar Alves de Carvalho
+  Titulacao: Mestre em Educacao
+  Link:      Curriculo Lattes
+
+Regiane Caire
+  Titulacao: Doutora em Historia da Ciencia
+  Link:      Curriculo Lattes
+
+Vinicius Souza de Azevedo
+  Titulacao: Doutor em Artes Visuais
+  Link:      Curriculo Lattes
+
+
+================================================================================
+9. PROJETOS DE PESQUISA, EXTENSAO, INOVACAO E BOLSA
+================================================================================
+
+Subtitulo:
+Conheca aqui todos os projetos de pesquisa, extensao, grupos de
+pesquisa, programas de bolsa de pesquisa e de docencia presentes no
+curso.
+
+
+PROJETOS EM ANDAMENTO
+----------------------
+
+1) Titulo:        A imagem impressa no entreseculos (XIX-XX): um estudo
+                  na Colecao Artur Azevedo
+   Tipo:          Projeto de pesquisa
+   Responsavel:   Prof. Dr. Frederico Fernando Souza Silva
+   Inicio:        2023
+   Status:        em andamento
+
+
+2) Titulo:        Patrimonio cultural como ferramenta para o ensino de
+                  Artes Visuais
+   Tipo:          Projeto de Pesquisa
+   Responsavel:   Prof. Dr. Mateus Alves Silva
+   Inicio:        2025
+   Status:        em andamento
+
+
+3) Titulo:        PIBID Edital 2024
+   Tipo:          Programa de iniciacao a docencia
+   Responsavel:   Prof. Dr. Pablo Petit Passos Servio
+   Inicio:        2024
+   Status:        em andamento
+
+
+4) Titulo:        Fotografia Expandida, Arte Contemporanea e Ensino de
+                  Artes Visuais
+   Tipo:          Projeto de pesquisa
+   Responsavel:   Prof. Dr. Pablo Petit Passos Servio
+   Inicio:        2025
+   Status:        em andamento
+
+
+5) Titulo:        O bordado no contexto do Bumba meu boi do Maranhao:
+                  arte e ensino a partir de referenciais das culturas
+                  populares
+   Tipo:          Projeto de pesquisa
+   Responsavel:   Prof. Dr. Vinicius Souza de Azevedo
+   Inicio:        2025
+   Status:        em andamento
+
+
+6) Titulo:        Monitoria nas Artes Visuais: atuacao pedagogica dos
+                  discentes na disciplina Cultura Imaterial Regional
+   Tipo:          Projeto de ensino e de monitoria
+   Responsavel:   Profa. Dra. Elisene Castro Matos
+   Inicio:        2020
+   Status:        em andamento
+
+
+7) Titulo:        A imagem sobre o papel: acoes artisticas como meio de
+                  promover a educacao ambiental
+   Tipo:          Projeto de extensao
+   Responsavel:   Profa. Dra. Regiane Aparecida Caire da Silva
+   Inicio:        2022
+   Status:        em andamento
+   Extra:         Saiba mais
+
+
+8) Titulo:        Visualidade e acervo digital no estudo da cena:
+                  espaco, cor, memoria e arquivo
+   Tipo:          Projeto de pesquisa
+   Responsavel:   Profa. Dra. Regiane Aparecida Caire da Silva
+   Inicio:        2025
+   Status:        em andamento
+
+
+PROJETOS ENCERRADOS
+--------------------
+
+9) Titulo:        Processos Fotograficos Alternativos
+   Tipo:          Projeto de extensao
+   Responsavel:   Prof. Dr. Pablo Petit Passos Servio
+   Periodo:       2021 - 2025
+   Extra:         Saiba mais
+
+
+10) Titulo:       A imagem grafica na Colecao Artur Azevedo: estudo dos
+                  processos de impressao e da conservacao preventiva
+                  do papel
+    Tipo:         Projeto de pesquisa
+    Responsavel:  Profa. Dra. Regiane Aparecida Caire da Silva
+    Periodo:      2020 - 2024
+
+
+11) Titulo:       A cor na cena nos trabalhos de Bob Wilson e do grupo
+                  La Fura dels Baus: iluminacao, figurino, maquiagem e
+                  cenario
+    Tipo:         Projeto de pesquisa
+    Responsavel:  Profa. Dra. Regiane Aparecida Caire da Silva
+    Periodo:      2021 - 2024
+
+
+12) Titulo:       Os papeis da colecao Arthur Azevedo: estudo das
+                  tipologias graficas e sua conservacao
+    Tipo:         Projeto de pesquisa
+    Responsavel:  Profa. Dra. Regiane Aparecida Caire da Silva
+    Periodo:      2022 - 2024
+
+
+13) Titulo:       Acervo aberto: um estudo das Colecoes Banco Central e
+                  Bozanno (Foco Academico - PROAES)
+    Tipo:         Projeto de ensino e de monitoria
+    Responsavel:  Prof. Dr. Frederico Fernando Souza Silva
+    Periodo:      2021 - 2023
+
+
+14) Titulo:       PIBID edital 2020
+    Tipo:         Programa de iniciacao a docencia
+    Responsavel:  Prof. Dr. Pablo Petit Passos Servio
+    Periodo:      2020 - 2022
+
+
+15) Titulo:       Arte e Historia da Arte sob o Prisma da Cultura Visual
+    Tipo:         Projeto de pesquisa
+    Responsavel:  Profa. Dra. Mariana Estellita Lins Silva
+    Periodo:      2020 - 2022
+
+
+16) Titulo:       PIBID edital 2018
+    Tipo:         Programa de iniciacao a docencia
+    Responsavel:  Prof. Dr. Pablo Petit Passos Servio
+    Periodo:      2018 - 2020
+
+
+17) Titulo:       A imagem sobre o papel: original e gravura
+    Tipo:         Projeto de extensao
+    Responsavel:  Profa. Dra. Regiane Aparecida Caire da Silva
+    Periodo:      2015 - 2018
+    Extra:        Saiba mais
+
+
+18) Titulo:       A contribuicao de Assis Chateaubriand na formacao do
+                  acervo artistico do Maranhao
+    Tipo:         Projeto de pesquisa
+    Responsavel:  Profa. Dra. Regiane Aparecida Caire da Silva
+    Periodo:      2015 - 2017
+
+
+================================================================================
+10. RODAPE
+================================================================================
+
+Logotipo: ARTES VISUAIS | UFMA
+
+Links do rodape:
+- Inicio
+- Perfil do curso
+- Curriculo
+- Historico do curso
+- Docentes
+- Projetos
+- Area dos alunos
+
+
+================================================================================
+FIM DO CONTEUDO
+================================================================================
+
+Observacoes para o editor:
+- Alguns acentos graves podem ter sido removidos/simplificados para
+  evitar problemas de encoding. Sempre validar na fonte original antes
+  de republicar.
+- O texto "ENEN / SISU" no site original parece ter um erro de digitacao
+  (deveria ser "ENEM / SISU"). Aqui foi corrigido para "ENEM / SISU".
+- Os nomes dos docentes podem ter variacoes (com "Profa. Dra." ou sem):
+  esta lista usa a forma mais curta conforme aparece na grade de cards.
+  A forma completa ("Profa. Dra. Regiane Aparecida Caire da Silva",
+  "Profa. Dra. Elisene Castro Matos") aparece nos cards de projetos.
+- A secao "Area do Aluno" do menu deve apontar para o SIGAA/UFMA.

@@ -1,0 +1,947 @@
+/* ==========================================================================
+   SUMÁRIO
+
+   1. Reset
+   2. Variáveis globais (tokens de design)
+   3. Base (html, body)
+   4. Tipografia (h1–h6, p, utilitários de texto)
+   5. Layout de seções (main > section)
+   6. Hero
+   7. Header / Menu
+   8. Banners de seção (imagem + texto)
+   9. Métricas (Perfil do curso)
+   10. Citações (Depoimentos)
+   11. Grid de docentes
+   12. Footer
+   ========================================================================== */
+
+
+/* ==========================================================================
+   1. RESET — zera diferenças entre navegadores
+   ========================================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* ==========================================================================
+   2. VARIÁVEIS GLOBAIS — paleta, fontes e medidas reutilizáveis
+   ========================================================================== */
+:root {
+  /* Cores */
+  --color-bg: #ffffff;
+  --color-text: #000000;
+  --color-accent: #B35919;
+  --color-card: #f6f2ee;
+  --color-muted: #888;
+  --color-header-bg: #2B2B2B;
+  --color-on-dark: #ffffff;
+
+  /* Tipografia */
+  --font-sans: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif;
+
+  /* Medidas de layout */
+  --max-container: 1200px;
+  --max-text: 55rem;
+
+  /* Transições */
+  --transition-fast: 0.2s ease;
+}
+
+
+/* ==========================================================================
+   3. BASE — estilo global do site
+   ========================================================================== */
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+
+/* ==========================================================================
+   4. TIPOGRAFIA
+   ========================================================================== */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+h1 { font-size: clamp(2.5rem, 6vw, 4.5rem); }
+h2 { font-size: clamp(1.75rem, 3.5vw, 2.5rem); }
+
+h3 {
+  font-size: clamp(1.375rem, 2.5vw, 1.75rem);
+  font-weight: 600;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+h4 { font-size: 1.25rem;  
+  font-weight: 600; 
+  margin-bottom: 1rem;
+}
+
+h5 { font-size: 1.125rem; font-weight: 600; }
+
+h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.chapeu {
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--color-accent);
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+.credito-obra {
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+}
+
+.destaque {
+  color: var(--color-accent);
+}
+
+
+/* ==========================================================================
+   5. LAYOUT DE SEÇÕES — ritmo e largura de leitura
+   ========================================================================== */
+main > section {
+  max-width: var(--max-container);
+  margin: 0 auto;
+  padding: 2rem;
+  scroll-margin-top: 5rem;
+}
+
+main > section h2 {
+  margin-bottom: 2.5rem;
+  max-width: var(--max-text);
+}
+
+main > section h3 {
+  margin-top: 3rem;
+  margin-bottom: 1.25rem;
+}
+
+main > section p,
+main > section ul,
+main > section ol,
+main > section blockquote {
+  max-width: var(--max-text);
+  margin-bottom: 1rem;
+}
+
+main > section ul {
+  padding-left: 1.5rem;
+}
+
+main > section ul li {
+  margin-bottom: 0.5rem;
+}
+
+
+/* ==========================================================================
+   6. HERO
+   ========================================================================== */
+.hero {
+  min-height: 60vh;
+  padding: 2rem;
+  display: flex;
+  align-items: flex-end;
+}
+
+.hero h1 {
+  font-size: clamp(4rem, 10vw, 8rem);
+  letter-spacing: -0.03em;
+  max-width: 60rem;
+  font-weight: 800;
+}
+
+
+/* ==========================================================================
+   7. HEADER / MENU
+   ========================================================================== */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  padding: 1rem 2rem;
+  background-color: var(--color-header-bg);
+  border-bottom: 1px solid #000000;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+header .logo {
+  display: inline-block;
+  line-height: 0;
+}
+
+header .logo img {
+  display: block;
+  height: 2.5rem;
+  width: auto;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+header nav a {
+  color: var(--color-on-dark);
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+header nav a:hover {
+  color: var(--color-accent);
+}
+
+/* Botão hamburger/X — escondido por padrão no desktop */
+.menu-toggle {
+  display: none;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.menu-toggle img {
+  display: block;
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.menu-toggle .icone-fechar {
+  display: none;
+}
+
+/* ----- Versão mobile do header ----- */
+@media (max-width: 1100px) {
+  header {
+    justify-content: flex-start;
+  }
+
+  .menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header nav {
+    display: none;
+    width: 100%;
+  }
+
+  header.aberto nav {
+    display: block;
+  }
+
+  header.aberto .menu-toggle .icone-menu  { display: none; }
+  header.aberto .menu-toggle .icone-fechar { display: block; }
+
+  header nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+    padding: 1.5rem 0 1rem;
+  }
+
+  header nav a {
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+}
+
+
+/* ==========================================================================
+   8. BANNERS DE SEÇÃO (full-bleed com imagem de fundo)
+   ========================================================================== */
+.section-banner {
+  position: relative;
+  min-height: clamp(25rem, 80vh, 50rem);
+  margin-left: calc(50% - 50vw);       /* escapa do container p/ ir ponta a ponta */
+  margin-right: calc(50% - 50vw);
+  margin-bottom: 3rem;
+  padding: 2.5rem 0;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  color: var(--color-on-dark);
+}
+
+/* Imagem de fundo (camada zoomável) */
+.section-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform-origin: center;
+}
+
+/* Gradiente escuro na parte de baixo, para legibilidade do texto */
+.section-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(to bottom, transparent 40%, rgba(0, 0, 0, 0.75) 75%);
+  pointer-events: none;
+}
+
+/* Conteúdo interno: volta a respeitar o container de 1200px */
+.banner-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: var(--max-container);
+  align-self: center;
+  padding: 0 2rem;
+}
+
+.section-banner .chapeu {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.section-banner h2 {
+  color: var(--color-on-dark);
+  margin-bottom: 1.5rem;
+  max-width: 50rem;
+}
+
+/* Modificadores: cada seção aponta a sua imagem.
+   Use `background-position` para ajustar o ponto de foco quando
+   o centro da imagem não for o melhor enquadramento. */
+.banner-perfil::before {
+  background-image: url('../images/perfil.jpg');
+}
+
+.banner-curriculo::before {
+  background-image: url('../images/curriculo.jpg');
+  background-position: center 30%;
+}
+
+.banner-historia::before {
+  background-image: url('../images/historia.jpg');
+  background-position: center 30%;
+}
+
+.banner-docentes::before {
+  background-image: url('../images/docentes.jpg');
+}
+
+
+/* ==========================================================================
+   9. MÉTRICAS (Perfil do curso)
+   ========================================================================== */
+.metricas {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+@media (min-width: 600px) {
+  .metricas { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 900px) {
+  .metricas { grid-template-columns: repeat(3, 1fr); }
+}
+
+.metricas > div {
+  text-align: center;
+  padding: 1rem 0.5rem;
+}
+
+.metricas .icone {
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  object-fit: contain;
+  margin: 0 auto 1.25rem;
+}
+
+.metricas dt {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 0.5rem;
+}
+
+.metricas dd {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-accent);
+}
+
+
+/* ==========================================================================
+   10. CITAÇÕES (Depoimentos)
+   ========================================================================== */
+main > section blockquote {
+  margin: 3rem 0;
+}
+
+main > section blockquote p {
+  font-style: italic;
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
+}
+
+main > section blockquote cite {
+  display: block;
+  font-style: normal;
+}
+
+main > section blockquote cite h4 {
+  margin-bottom: 0.25rem;
+}
+
+main > section blockquote cite p {
+  font-style: normal;
+  font-size: 0.875rem;
+  color: #bbb;
+  margin-bottom: 0;
+}
+
+/* Depoimentos: retrato circular discreto ao lado do nome */
+.cite-egresso {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+}
+
+.retrato-egresso {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  flex-shrink: 0;
+  filter: grayscale(0.35);
+  transition: filter 0.3s ease;
+}
+
+.retrato-egresso:hover {
+  filter: grayscale(0);
+}
+
+.info-egresso h4 {
+  margin: 0 0 0.15rem 0;
+}
+
+.info-egresso p {
+  margin: 0;
+}
+
+
+/* ==========================================================================
+   11. GRID DE DOCENTES
+   ========================================================================== */
+.grid-docentes {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 600px) {
+  .grid-docentes { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 900px) {
+  .grid-docentes { grid-template-columns: repeat(3, 1fr); }
+}
+
+.grid-docentes article {
+  background-color: var(--color-header-bg);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.grid-docentes .foto-professor {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.grid-docentes .corpo-docente {
+  padding: 1.5rem;
+}
+
+.grid-docentes article h4 {
+  color: var(--color-bg);
+  margin-bottom: 0.5rem;
+}
+
+.grid-docentes article p {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.grid-docentes article .formacao {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-muted);
+}
+
+.grid-docentes article .minibio {
+  line-height: 1.5;
+  color: var(--color-text);
+  display: none; /* oculto por enquanto — ainda decidindo se mantemos */
+}
+
+.grid-docentes article p:last-child {
+  margin-bottom: 0;
+}
+
+.grid-docentes article a {
+  color: var(--color-accent);
+  text-decoration: none;
+  align-self: flex-start;
+  padding: 0.25rem 0.75rem;
+  background-color: var(--color-accent);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-radius: 999px;
+}
+
+.grid-docentes article a:hover {
+  text-decoration: none;
+  background-color: #000000;
+
+}
+
+
+/* ==========================================================================
+   12. GRID E CARDS DE PROJETOS
+   ========================================================================== */
+  /*#projetos {
+    margin-top: 2rem;
+  }
+
+  #projetos .chapeu {
+    margin-top: 0;
+  }
+
+  #projetos h3 {
+    margin-top: 0.5rem;
+  }
+*/
+   .grid-projetos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  @media (min-width: 600px) {
+    .grid-projetos { grid-template-columns: repeat(2, 1fr); }
+  }
+  
+  @media (min-width: 1000px) {
+    .grid-projetos { grid-template-columns: repeat(3, 1fr); }
+  }
+  
+  .card-projeto {
+    background-color: var(--color-header-bg);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-projeto .thumb-projeto {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+  
+  .card-projeto .corpo-projeto {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    flex: 1;
+  }
+  
+  .card-projeto .chip-tipo {
+    align-self: flex-start;
+    color: var(--color-accent);
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  
+  }
+  
+  .card-projeto h4 {
+    color:#FFFFFF;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-projeto .meta {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-muted);
+    margin: 0;
+  }
+
+  .card-projeto .meta-periodo {
+    margin-bottom: 0.15rem;
+  }
+  
+  .card-projeto .meta-periodo {
+    color:#FFFFFF;
+    margin-bottom: 0.5rem;
+  }
+
+  .card-projeto .descricao {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0;
+    max-width: none;
+  }
+  
+  .card-projeto .link-projeto {
+    color: var(--color-accent);
+    text-decoration: none;
+    align-self: flex-start;
+    padding: 0.25rem 0.75rem;
+    background-color: var(--color-accent);
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    border-radius: 999px;
+  }
+  
+  .card-projeto .link-projeto:hover {
+    text-decoration: none;
+    background-color: #000000;
+  }
+
+
+/* ==========================================================================
+   13. FOOTER
+   ========================================================================== */
+footer {
+  background-color: var(--color-header-bg);
+  color: var(--color-on-dark);
+  padding: 3rem 0;
+}
+
+.footer-inner {
+  max-width: var(--max-container);
+  margin: 0 auto;
+  padding: 0 2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (min-width: 700px) {
+  .footer-inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.footer-logos {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.footer-logos img {
+  display: block;
+  width: auto;
+}
+
+.footer-logos .logo-ufma     { height: 4.5rem; }
+.footer-logos .logo-wordmark { height: 1.75rem; }
+
+footer nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+@media (min-width: 700px) {
+  footer nav ul {
+    text-align: right;
+  }
+}
+
+footer nav a {
+  color: var(--color-on-dark);
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+footer nav a:hover {
+  color: var(--color-accent);
+}
+
+/* ==========================================================================
+   13. CARROSSEL DE PERÍODOS (Matriz curricular)
+   ========================================================================== */
+
+/* Wrapper externo */
+.carrossel-periodos {
+  margin-top: 3rem;
+}
+
+/* Linha com setas + trilho (track) */
+.carrossel-corpo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Trilho que rola horizontalmente */
+.carrossel-track {
+  flex: 1;
+  display: flex;
+  gap: 1.5rem;
+  padding: 0.5rem 0.25rem;
+
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.carrossel-track::-webkit-scrollbar {
+  display: none;
+}
+
+/* Cards dentro do trilho */
+.card-periodo {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+
+  background-color: var(--color-header-bg);
+  color: var(--color-on-dark);
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+@media (min-width: 600px) {
+  .card-periodo { flex: 0 0 calc(50% - 0.75rem); }
+}
+
+@media (min-width: 900px) {
+  .card-periodo { flex: 0 0 calc(33.333% - 1rem); }
+}
+
+.card-periodo h4 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: var(--color-accent);
+  font-size: 1.375rem;
+}
+
+.card-periodo ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: none;
+}
+
+.card-periodo li {
+  padding: 0.5rem 0;
+  margin-bottom: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.card-periodo li:last-child {
+  border-bottom: 0;
+}
+
+/* Setas de navegação */
+.carrossel-btn {
+  flex-shrink: 0;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  border: 1px solid var(--color-muted);
+  background-color: #ffffff;
+  color: var(--color-text);
+  font-size: 1.75rem;
+  line-height: 1;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color var(--transition-fast),
+              color var(--transition-fast),
+              border-color var(--transition-fast),
+              opacity var(--transition-fast);
+}
+
+.carrossel-btn:hover:not(:disabled) {
+  background-color: var(--color-accent);
+  color: #ffffff;
+  border-color: var(--color-accent);
+}
+
+.carrossel-btn:disabled {
+  opacity: 0.25;
+  cursor: not-allowed;
+}
+
+/* Indicadores de página (pontinhos) */
+.carrossel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.carrossel-dots button {
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 50%;
+  border: 0;
+  padding: 0;
+  background-color: #ccc;
+  cursor: pointer;
+
+  transition: background-color var(--transition-fast),
+              transform var(--transition-fast);
+}
+
+.carrossel-dots button.ativo {
+  background-color: var(--color-accent);
+  transform: scale(1.3);
+}
+
+
+/* ==========================================================================
+   ANIMAÇÕES DE SCROLL
+   Como usar: adicione data-anim="..." em qualquer elemento.
+   Tipos disponíveis: fade, fade-up, fade-down, slide-left, slide-right, zoom-in.
+   ========================================================================== */
+
+[data-anim] {
+  opacity: 0;
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
+  will-change: opacity, transform;
+}
+
+[data-anim].visible {
+  opacity: 1;
+  transform: none;
+}
+
+[data-anim="fade-up"]    { transform: translateY(30px); }
+[data-anim="fade-down"]  { transform: translateY(-30px); }
+[data-anim="slide-left"] { transform: translateX(-40px); }
+[data-anim="slide-right"]{ transform: translateX(40px); }
+[data-anim="zoom-in"]    { transform: scale(0.92); }
+
+/* Animação específica para banners: o conteúdo (texto) fica visível
+   normalmente, mas a imagem de fundo (::before) anima de scale(1.5)
+   para scale(1) quando o banner entra no viewport. */
+.section-banner[data-anim="banner-zoom"] {
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
+
+.section-banner[data-anim="banner-zoom"]::before {
+  transform: scale(1.5);
+  transition: transform 1.4s ease-out;
+}
+
+.section-banner[data-anim="banner-zoom"].visible::before {
+  transform: scale(1);
+}
+
+[data-anim][data-delay="100"] { transition-delay: 0.1s; }
+[data-anim][data-delay="200"] { transition-delay: 0.2s; }
+[data-anim][data-delay="300"] { transition-delay: 0.3s; }
+[data-anim][data-delay="400"] { transition-delay: 0.4s; }
+[data-anim][data-delay="500"] { transition-delay: 0.5s; }
+
+@media (prefers-reduced-motion: reduce) {
+  [data-anim] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
