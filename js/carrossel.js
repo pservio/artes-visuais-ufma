@@ -61,3 +61,6 @@ function iniciarCarrossel(carrossel) {
 }
 
 document.querySelectorAll('.carrossel-periodos').forEach(iniciarCarrossel);
+
+// Usado em js/projetos.js após buscar a planilha (o trilho começa vazio).
+window.iniciarCarrossel = iniciarCarrossel;

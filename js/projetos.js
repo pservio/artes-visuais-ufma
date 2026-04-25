@@ -58,7 +58,9 @@ function cardProjeto(proj) {
 }
 
 async function renderizarProjetos() {
-  const container = document.querySelector('#projetos .grid-projetos');
+  const container = document.querySelector(
+    '#projetos .carrossel-track-projetos'
+  );
   const secao = document.querySelector('#projetos');
   if (!container || !secao) return;
 
@@ -74,6 +76,10 @@ async function renderizarProjetos() {
     }
 
     container.innerHTML = validos.map(cardProjeto).join('');
+
+    if (typeof window.iniciarCarrossel === 'function') {
+      window.iniciarCarrossel(secao);
+    }
   } catch (erro) {
     console.error('Erro ao carregar projetos:', erro);
     secao.style.display = 'none';
