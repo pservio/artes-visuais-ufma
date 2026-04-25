@@ -23,3 +23,6 @@ Desktop.ini
 
 # Dependências (caso o projeto evolua para usar Node)
 node_modules/
+
+# Mockup local muito pesado (não versionar)
+Desktop.png

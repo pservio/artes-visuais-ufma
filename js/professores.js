@@ -2,7 +2,7 @@ function cardProfessor(prof) {
   const nome = escaparHTML(prof['Nome do professor']);
   const formacao = escaparHTML(prof['Formação']);
   const minibio = escaparHTML(prof['Minibio']);
-  const lattes = prof['lattes'];
+  const lattes = urlSegura(prof['lattes']);
   const foto = normalizarImagemDrive(prof['fotografia do professor'], 600);
   const alt = escaparHTML(
     prof['fotografia do professor:alt'] || prof['Nome do professor'] || ''

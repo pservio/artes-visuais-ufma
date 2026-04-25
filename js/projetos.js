@@ -24,7 +24,7 @@ function cardProjeto(proj) {
   const fim = escaparHTML(proj['Data de finalização']);
   const descricao = escaparHTML(proj['Descrição']);
   const thumb = normalizarImagemDrive(proj['Thumb'], 800);
-  const link = proj['Link da pagina do projeto'];
+  const link = urlSegura(proj['Link da pagina do projeto']);
 
   const periodo = montarPeriodo(inicio, fim);
 

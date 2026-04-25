@@ -7,6 +7,25 @@ function escaparHTML(texto) {
   return div.innerHTML;
 }
 
+// Sanitiza URLs vindas da planilha antes de inserir em href.
+// escaparHTML não previne `javascript:` URIs, então validamos o protocolo aqui.
+// Retorna a URL original se for segura ou string vazia se não for — assim o
+// código de renderização naturalmente oculta o link quando o valor é inválido.
+const PROTOCOLOS_PERMITIDOS = ['http:', 'https:', 'mailto:'];
+
+function urlSegura(url) {
+  if (!url) return '';
+  const texto = String(url).trim();
+  if (!texto) return '';
+
+  try {
+    const parsed = new URL(texto, window.location.origin);
+    return PROTOCOLOS_PERMITIDOS.includes(parsed.protocol) ? texto : '';
+  } catch {
+    return '';
+  }
+}
+
 function normalizarImagemDrive(url, largura = 800) {
   if (!url) return '';
   const texto = String(url).trim();

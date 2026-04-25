@@ -79,6 +79,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 1.15;
   letter-spacing: -0.02em;
+  /* Distribui as palavras de forma equilibrada entre as linhas, evitando
+     quebras feias com órfãs (ex.: nomes longos de professores, títulos
+     de projetos e seções). Ignorada em navegadores antigos sem efeito colateral. */
+  text-wrap: balance;
 }
 
 h1 { font-size: clamp(2.5rem, 6vw, 4.5rem); }
@@ -503,6 +507,10 @@ main > section blockquote cite p {
 
 @media (min-width: 900px) {
   .grid-docentes { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (min-width: 1200px) {
+  .grid-docentes { grid-template-columns: repeat(4, 1fr); }
 }
 
 /* Card em formato retrato (3:4), com a foto cobrindo todo o espaço
