@@ -372,7 +372,7 @@ header nav a:hover {
 
 .banner-curriculo::before {
   background-image: url('../images/curriculo.jpg');
-  background-position: center 30%;
+  background-position: top center;
 }
 
 .banner-historia::before {
